@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+}
+
+.barra {
+  height: auto;
+  width: 100%;
+}
+
+/*  seccion # 1 */
+.content1 {
+  display: flex;
+  justify-content: center;
+}
+
+.position_bx1 {
+  height: 180px;
+  width: 250px;
+  border: red 1px solid;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/*  seccion # 2 */
+/* .content2 {
+} */
+
+.content2 > .ps {
+  width: 100%;
+  padding-left: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 20px;
+  padding: 10px;
+  /* border: red 1px solid; */
+  justify-content: center;
+}
+
+.position_bx2 {
+  height: 80px;
+  width: 250px;
+  border: red 1px solid;
+}

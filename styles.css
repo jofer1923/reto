@@ -52,9 +52,25 @@ body {
 .content1 > #bl2 {
   border-top: hsl(203, 89%, 53%) solid 5px;
 }
-.content1 > #bl3 {
-  border-top: green 5px solid;
+#bl3 {
+  /* border-top: green 5px solid; */
+
+  border-radius: 5px;
+  border-width: 5px;
+  border: solid 5px transparent;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px hsl(227, 47%, 96%) inset;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
 }
+
 .content1 > #bl4 {
   border-top: hsl(348, 97%, 39%) solid 5px;
 }
@@ -64,7 +80,6 @@ body {
   height: 25px;
   width: fit-content;
   font-weight: 400;
-  /* border: red solid 1px; */
   padding-left: 9px;
 }
 
@@ -83,7 +98,6 @@ body {
   font-weight: 700;
   font-family: "Inter", sans-serif;
   justify-content: center;
-  /* border: red 1px solid; */
   margin-bottom: 0;
 }
 
@@ -105,7 +119,6 @@ body {
   font-family: "Inter", sans-serif;
   justify-content: center;
   margin-top: 25px;
-  /* border: red solid 1px; */
 }
 
 .updown > span {
@@ -159,7 +172,6 @@ body {
   color: hsl(228, 12%, 44%);
   justify-content: space-between;
   margin-top: 5px;
-  /* border: red solid 1px; */
 }
 
 .likes > figure > img {
@@ -199,9 +211,44 @@ body {
 .updown_1 > span > img {
   margin-bottom: 2px;
 }
-/* @media screen and (max-width:375px){
 
+/* ////////////////////////////////////////////// */
+@media (max-width: 375px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
 
+  .barra {
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+  }
 
+  .barra > .tt1 {
+    margin-left: 10px;
+    margin-bottom: 30px;
+  }
 
-} */
+  .content1 {
+    display: block;
+  }
+
+  .position_bx1 {
+    margin: 10px 0 0 20px;
+    width: 90%;
+  }
+
+  .content2 > #tt2 {
+    margin-left: 10px;
+  }
+  .content2 > .ps {
+    display: block;
+    /* width: 90%; */
+  }
+
+  .position_bx1 {
+    margin: 10px 0 0 20px;
+    width: 90%;
+  }
+}
